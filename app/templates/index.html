@@ -8,28 +8,35 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="icon" type="image/png" href="https://www.unifeso.edu.br/images/favicon.png" />
     <title>Projeto 02</title>
+
+   
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>PROJETO 02 - Docker + PostgreSQL</h1>
+        <header class="d-felx w-100" style="justify-content: center;">
+            <h1>PROJETO av2</h1>
         </header>
         
         <section class="input-form">
             <form action="/" method="post">
-                <input type="text" name="comandoSQL" placeholder="Digite seu comando SQL">
-                <input type="submit" value="Enviar">
+                
+                <div class="d-felx w-100" style="justify-content: center;">
+                    <textarea style="width: 80%;" rows="4" name="comandoSQL" placeholder="Digite seu comando SQL"></textarea>
+                </div>
+                <div class="d-felx w-100" style="justify-content: end;">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
-            {% if erro %} <!-- sintaxe Jinja2 --> 
-                <div class="erro">{{ erro }} <!-- sintaxe Jinja2 --> </div>
-            {% endif %} <!-- sintaxe Jinja2 --> 
+            {% if erro %} > 
+                <div class="erro">{{ erro }} > </div>
+            {% endif %} > 
         </section>
         
-        <!-- OBJETIVO OBRIGATÓRIO -->
-        <section class="resultados">
-            {% if consulta_resultado %} <!-- sintaxe Jinja2 --> 
+        <section >
+            {% if consulta_resultado %} > 
                 <hr/>
-                <table>
+                <br>
+                <table class="w-100">
                     <thead>
                         <tr>
                             {% for conluna in colunas %}

@@ -1,1 +1,14 @@
-/** OBJETIVO OPTATIVO: criar estilos para a página.
+.d-felx{
+    display: flex;
+}
+
+.w-100{
+    width: 100%;
+}
+tr{
+    padding: 0.5rem;
+}
+
+th{
+    text-align: left;
+}
